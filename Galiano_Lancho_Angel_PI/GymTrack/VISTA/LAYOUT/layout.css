@@ -1,0 +1,382 @@
+/* Importar la fuente "Poppins" de Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+/* Reset de estilos para mejorar la consistencia entre navegadores */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos generales para el cuerpo de la página */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f0f8ff;
+    color: #333;
+}
+
+/* Estilos para el encabezado (header) */
+header {
+    background-color: #00bcd4;
+    color: #fff;
+    text-align: center;
+    padding: 40px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-bottom: 5px solid #00838f;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 3em;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    letter-spacing: 2px;
+}
+
+/* Estilos para encabezados h2 */
+h2 {
+    font-size: 2.5em;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    color: #00838f;
+    text-align: center;
+    margin: 20px 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+h2::after {
+    content: '';
+    display: block;
+    width: 100px;
+    height: 3px;
+    background-color: #00bcd4;
+    margin: 10px auto 0;
+    border-radius: 2px;
+}
+
+/* Estilos para encabezados h3 */
+h3 {
+    font-size: 2em;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    color: #00bcd4;
+    text-align: center;
+    margin: 20px 0;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para encabezados h4 */
+h4 {
+    font-size: 1.5em;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    color: #00796b;
+    margin: 20px 0;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para encabezados h5 */
+h5 {
+    font-size: 1.2em;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    color: #004d40;
+    margin: 20px 0;
+}
+
+/* Estilos para encabezados h6 */
+h6 {
+    font-size: 1em;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    color: #00363a;
+    margin: 20px 0;
+}
+
+/* Estilos para el contenido principal (main) */
+main {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 1200px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Estilos para el pie de página (footer) */
+footer {
+    background-color: #00bcd4;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9em;
+}
+
+/* Estilos para los enlaces */
+a {
+    color: #00bcd4;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #00796b;
+    text-decoration: underline;
+}
+
+/* Estilos para la tabla */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+}
+
+th {
+    background-color: #00bcd4;
+    color: #fff;
+    font-weight: bold;
+}
+
+td {
+    border: 1px solid #ddd;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #e0f7fa;
+}
+
+/* Estilos para botones */
+button {
+    background-color: #00bcd4;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #00796b;
+    transform: scale(1.05);
+}
+
+button:active {
+    transform: scale(1);
+}
+
+/* Estilos para formularios */
+input, textarea {
+    font-size: 1em;
+    padding: 10px;
+    border: 1px solid #00bcd4;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus, textarea:focus {
+    border-color: #00796b;
+    outline: none;
+    box-shadow: 0 0 8px rgba(0, 188, 212, 0.6);
+}
+
+/* Clase de error para mensajes */
+.error {
+    background-color: #ffcdd2;
+    border: 1px solid #f44336;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.error p {
+    color: #f44336;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.error a {
+    color: #f44336;
+    text-decoration: none;
+}
+
+.error a:hover {
+    text-decoration: underline;
+}
+
+/* Clase para la sección de la barra lateral */
+.sidebar {
+    width: 30%;
+    float: left;
+    padding: 20px;
+    background-color: #e0f7fa;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-right: 20px;
+}
+
+/* Clase para la sección del contenido principal */
+.content {
+    width: 70%;
+    float: left;
+}
+
+/* Estilos para la tabla de productos */
+.product-table th {
+    background-color: #00acc1;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px;
+    text-align: left;
+}
+
+.product-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+.product-table tr:nth-child(even) {
+    background-color: #e0f7fa;
+}
+
+.product-table tr:hover {
+    background-color: #b2ebf2;
+}
+
+/* Estilos para el botón de editar en la tabla de productos */
+.product-table .edit-button {
+    background-color: #00796b;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.product-table .edit-button:hover {
+    background-color: #004d40;
+    transform: scale(1.05);
+}
+
+.product-table .edit-button:active {
+    transform: scale(1);
+}
+
+/* Estilos para input */
+input {
+    font-size: 1.2em;
+    padding: 10px;
+    border: 1px solid #00bcd4;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus {
+    border-color: #00796b;
+    outline: none;
+    box-shadow: 0 0 8px rgba(0, 188, 212, 0.6);
+}
+
+
+/* Estilos para secciones */
+section {
+    margin-bottom: 40px;
+}
+
+/* Estilos para encabezados de sección */
+section h2 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    color: #00bcd4;
+    border-bottom: 2px solid #00bcd4;
+    padding-bottom: 10px;
+}
+
+/* Añadir transiciones a los elementos */
+header, footer, table, button, input, textarea {
+    transition: all 0.3s ease;
+}
+/* Agrega estilos específicos para los elementos con las clases agregadas */
+.select-box {
+    font-size: 1em;
+    padding: 10px;
+    border: 1px solid #00bcd4;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.text-input {
+    font-size: 1.2em;
+    padding: 10px;
+    border: 1px solid #00bcd4;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.date-input {
+    font-size: 1em;
+    padding: 10px;
+    border: 1px solid #00bcd4;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.centered-button-form {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px; /* Ajusta este valor según sea necesario */
+}
+
+h1 {
+    margin-top: 20px; /* Agrega un margen superior al título */
+    font-size: 2.5em; /* Tamaño de fuente ajustable según preferencia */
+    text-align: center; /* Alineación centrada del texto */
+}
+
+.centered-button {
+    display: block;
+    margin: 20px auto; /* Centra el botón y añade un margen superior */
+    margin-top: 10px; /* Ajusta este valor según la cantidad de espacio que desees */
+}
